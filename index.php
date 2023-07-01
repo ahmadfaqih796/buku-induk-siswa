@@ -435,6 +435,17 @@ if ($bulan >= 7) {
                             <!-- Log out-->
                             <li class="nav-item"><a href="logout.php" class="nav-link logout" onclick="return confirm('Anda yakin ingin keluar?')"> <span class="d-none d-sm-inline-block">Logout</span><i class="fa fa-sign-out"></i></a>
                             </li>
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="logout.php" onclick="return confirm('Anda yakin ingin keluar?')">
+                                        <i class="fa fa-sign-out"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
