@@ -9,7 +9,6 @@ $ns = str_replace(" ", "_", $dsiswa['nm_lengk_siswa']);
 $nama_file = date("Y-m-d") . "_data_nilai_" . $ns;
 
 if (isset($_GET['semester'])) {
-	include "koneksi.php";
 	$sm = $_GET['semester'];
 } else {
 	$sm = 1;
@@ -19,8 +18,9 @@ use Dompdf\Dompdf;
 // Buat objek Dompdf baru
 $dompdf = new Dompdf();
 
-
-$html = '<table border="1">
+$html = '
+<h4 class="page-header" align="center">LEMBAR NILAI BUKU INDUK PESERTA DIDIK SDN CAKUNG BARAT 06</h4>
+<table border="1">
     <tr>
         <th width="5%">No</th>
         <th>Mata Pelajaran</th>
