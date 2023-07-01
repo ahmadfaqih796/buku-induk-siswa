@@ -424,9 +424,6 @@ if ($bulan >= 7) {
                             <a href="index.php?hal=" class="navbar-brand">
                                 <div class="brand-text d-none d-md-inline-block"><span></span>
                                     <strong class="text-light">Aplikasi Buku Induk Siswa
-                                        <span class="text-light">
-                                            <?= $th_pelajaran; ?>
-                                        </span>
                                     </strong>
                                 </div>
                             </a>
