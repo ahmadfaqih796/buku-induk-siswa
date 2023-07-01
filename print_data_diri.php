@@ -16,143 +16,149 @@ $dompdf = new Dompdf();
 $html = '<html>
 
 <head>
+    <style>
+    .page-break {
+        page-break-before: always;
+    }
+    </style>
    <br>
-   <h4 class="page-header" align="center">LEMBAR BUKU INDUK PESERTA DIDIK SD</h4>
+   <h4 class="page-header" align="center">LEMBAR BUKU INDUK PESERTA DIDIK SDN CAKUNG BARAT 06</h4>
    <br>
 </head>
 
 <body>
-   <table border="1">
+   <table>
       <tr>
          <td width="20%">Nomor Induk</td>
          <td>
-            ' . $data['NIS'] . '
+            : ' . $data['NIS'] . '
          </td>
       </tr>
       <tr>
          <td>NISN</td>
-         <td>' . $data['nisn'] . '</td>
+         <td>: ' . $data['nisn'] . '</td>
       </tr>
    </table>
    <b>A. KETERANGAN PRIBADI SISWA</b>
-   <table border="1">
+   <table>
       <tr>
          <td width="20%">Nama Lengkap</td>
-         <td>' . $data['nm_lengk_siswa'] . '</td>
+         <td>: ' . $data['nm_lengk_siswa'] . '</td>
       </tr>
       <tr>
          <td>Nama Panggilan</td>
-         <td>' . $data['nm_pang_siswa'] . '</td>
+         <td>: ' . $data['nm_pang_siswa'] . '</td>
       </tr>
       <tr>
          <td>Jenis Kelamin</td>
-         <td>' . $data['jenis_kelamin'] . '</td>
+         <td>: ' . $data['jenis_kelamin'] . '</td>
       </tr>
       <tr>
          <td>Tempat dan tanggal lahir</td>
-         <td>' . $data['tmpt_lhr_siswa'] . ' ' . $data['tgl_lhr_siswa'] . '</td>
+         <td>: ' . $data['tmpt_lhr_siswa'] . ', ' . $data['tgl_lhr_siswa'] . '</td>
       </tr>
       <tr>
          <td>Agama</td>
-         <td>' . $data['agama_siswa'] . '</td>
+         <td>: ' . $data['agama_siswa'] . '</td>
       </tr>
       <tr>
          <td>Anak ke</td>
-         <td>' . $data['anak_ke'] . '</td>
+         <td>: ' . $data['anak_ke'] . '</td>
       </tr>
       <tr>
          <td>Jumlah Saudara</td>
-         <td>' . $data['jml_sdr'] . '</td>
+         <td>: ' . $data['jml_sdr'] . '</td>
       </tr>
       <tr>
          <td>Anak yatim/piatu,yatim piatu</td>
-         <td>' . $data['anak_yp'] . '</td>
+         <td>: ' . $data['anak_yp'] . '</td>
       </tr>
       <tr>
          <td>Bahasa sehari-hari dirumah</td>
-         <td>' . $data['bahasa'] . '</td>
+         <td>: ' . $data['bahasa'] . '</td>
       </tr>
    </table>
    <b>B. KETERANGAN TEMPAT TINGGAL SISWA</b>
-   <table border="1">
+   <table>
       <tr>
          <td>Alamat Peserta Didik</td>
-         <td>' . $data['alamat_peserta_didik'] . '</td>
+         <td>: ' . $data['alamat_peserta_didik'] . '</td>
       </tr>
       <tr>
          <td>Selama bersekolah tinggal dengan</td>
-         <td>' . $data['tinggal_dg'] . '</td>
+         <td>: ' . $data['tinggal_dg'] . '</td>
       </tr>
       <tr>
          <td>Jarak dari tempat tinggal ke sekolah</td>
-         <td>' . $data['jarak'] . '</td>
+         <td>: ' . $data['jarak'] . '</td>
       </tr>
       <tr>
          <td>Ke sekolah dengan kendaraan / jalan kaki</td>
-         <td>' . $data['transportasi'] . '</td>
+         <td>: ' . $data['transportasi'] . '</td>
       </tr>
    </table>
    <b>C. KETERANGAN JASMANI DAN KESEHATAN SISWA</b>
-   <table border="1">
+   <table>
       <tr>
          <td>Berat badan pada waktu diterima </td>
-         <td>' . $data['bb_diterima'] . ' kg</td>
+         <td>: ' . $data['bb_diterima'] . ' kg</td>
       </tr>
       <tr>
          <td>Pada waktu meninggalkan sekolah</td>
-         <td>' . $data['bb_meninggalkan'] . ' kg</td>
+         <td>: ' . $data['bb_meninggalkan'] . ' kg</td>
       </tr>
       <tr>
          <td>Tinggi badan pada waktu diterima</td>
-         <td>' . $data['tb_diterima'] . ' cm</td>
+         <td>: ' . $data['tb_diterima'] . ' cm</td>
       </tr>
       <tr>
          <td>Pada waktu meninggalkan sekolah</td>
-         <td>' . $data['tb_meninggalkan'] . ' cm</td>
+         <td>: ' . $data['tb_meninggalkan'] . ' cm</td>
       </tr>
       <tr>
          <td>Golongan darah</td>
-         <td>' . $data['goldar'] . '</td>
+         <td>: ' . $data['goldar'] . '</td>
       </tr>
    </table>
    <b>D. KETERANGAN TENTANG PENDIDIKAN SEBELUMNYA</b>
-   <table border="1">
+   <table>
       <tr>
          <td>Diterima di sekolah ini sebagai siswa baru tanggal</td>
-         <td>' . $data['tgl_diterima'] . '</td>
+         <td>: ' . $data['tgl_diterima'] . '</td>
       </tr>
       <tr>
          <td>Asal Sekolah Dasar</td>
-         <td>' . $data['asal_sd'] . '</td>
+         <td>: ' . $data['asal_sd'] . '</td>
       </tr>
       <tr>
          <td>Alamat</td>
-         <td>' . $data['alamat_sd'] . '</td>
+         <td>: ' . $data['alamat_sd'] . '</td>
       </tr>
       <tr>
          <td>Tanggal dan No.Ijazah</td>
-         <td>' . $data['tgl_ijazah_sd'] . ' . ' . $data['no_ijazah_sd'] . '</td>
+         <td>: ' . $data['tgl_ijazah_sd'] . ' . ' . $data['no_ijazah_sd'] . '</td>
       </tr>
       <tr>
          <td>Diterima disekolah sebagai siswa pindahan pada tanggal</td>
-         <td>' . $data['tgl_diterima_pindahan'] . '</td>
+         <td>: ' . $data['tgl_diterima_pindahan'] . '</td>
       </tr>
       <tr>
          <td>Di kelas</td>
-         <td>' . $data['kelas_diterima'] . '</td>
+         <td>: ' . $data['kelas_diterima'] . '</td>
       </tr>
       <td>Asal SD/ No Ijazah</td>
-      <td>' . $data['asal_no_ijazah_sd_pindahan'] . '</td>
+      <td>: ' . $data['asal_no_ijazah_sd_pindahan'] . '</td>
       </tr>
       <tr>
          <td>Alamat</td>
-         <td>' . $data['alamat_sd_pindahan'] . '</td>
+         <td>: ' . $data['alamat_sd_pindahan'] . '</td>
       </tr>
       <tr>
          <td>Alasan pindah ke sekolah ini</td>
-         <td>' . $data['alasan_pindah'] . '</td>
+         <td>: ' . $data['alasan_pindah'] . '</td>
       </tr>
    </table>
+   <div class="page-break"></div>
    <b>E. KETERANGAN TENTANG ORANG TUA KANDUNG</b>
    <table border="1">
       <tr>
