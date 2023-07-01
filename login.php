@@ -25,18 +25,18 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/Buku.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Tweaks for older IEs-->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <style>
-    .background1 {
-        background-image: url("img/foto.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: 60% 30%;
-    }
+        .background1 {
+            background-image: url("img/background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 60% 30%;
+        }
     </style>
 </head>
 
@@ -45,30 +45,31 @@
         <div class="container">
             <div class="form-outer text-center d-flex align-items-center">
                 <div class="form-inner" style="margin:auto;">
-                    <!-- <img src="img/foto.jpg" width="12%" height="22%" > -->
+                    <img src="img/logo-sekolah.png" width="50%" height="22%">
                     <?php
-              include("koneksi.php");
-              $la = mysqli_query($connect,"select * from tbprofil ");
-              $da = $la->fetch_array(MYSQLI_ASSOC);
-					  ?>
-                    <div class="logo text-uppercase"><strong class="text-success">Aplikasi</strong></div>
-                    <div class="logo text-uppercase"> <strong class="text-primary">Buku Induk Siswa</strong> </div>
-                    <div class="logo text-uppercase text-wrap"> <strong
-                            class="text-warning outer-text"><?=strtoupper($da['nama_Sekolah'])?></strong> </div>
+                    include("koneksi.php");
+                    $la = mysqli_query($connect, "select * from tbprofil ");
+                    $da = $la->fetch_array(MYSQLI_ASSOC);
+                    ?>
+                    <!-- <div class="logo text-uppercase"><strong class="text-success">Aplikasi</strong></div> -->
+
+                    <div class="logo text-uppercase" style="margin-top: 20px;">
+                        <strong style="color: black;">
+                            Login
+                        </strong>
+                    </div>
+                    <!-- <div class="logo text-uppercase text-wrap"> <strong class="text-warning outer-text"><?= strtoupper($da['nama_Sekolah']) ?></strong> </div> -->
                     <form method="post" action="proses_login.php" class="text-left form-validate">
                         <div class="form-group-material">
-                            <input id="login-username" type="text" name="user" required
-                                data-msg="Please enter your username" class="input-material">
-                            <label for="login-username" class="label-material text-center">Username</label>
+                            <input id="login-username" type="text" name="user" required data-msg="Please enter your username" class="input-material" style="border-bottom: 2px solid black;">
+                            <label for="login-username" class="label-material text-center" style="color: black;">Username</label>
                         </div>
                         <div class="form-group-material">
-                            <input id="login-password" type="password" name="pass" required
-                                data-msg="Please enter your password" class="input-material">
-                            <label for="login-password" class="label-material text-center">Password</label>
+                            <input id="login-password" type="password" name="pass" required data-msg="Please enter your password" class="input-material" style="border-bottom: 2px solid black;">
+                            <label for="login-password" class="label-material text-center" style="color: black;">Password</label>
                         </div>
                         <div class="form-group text-center">
-                            <input type="submit" class="btn btn-primary" style="min-width:100% !important;"
-                                value="Masuk">
+                            <input type="submit" class="btn btn-primary" style="min-width:100% !important; background-color: black;" value="Masuk">
                             <!-- This should be submit button but I replaced it with <a> for demo purposes-->
                         </div>
                 </div>
