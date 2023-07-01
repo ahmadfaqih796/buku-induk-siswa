@@ -11,10 +11,6 @@ use Dompdf\Dompdf;
 
 // Buat objek Dompdf baru
 $dompdf = new Dompdf();
-// $html = file_get_contents('print/data_pribadi.php');
-// Data PHP
-$nama = "John Doe";
-$umur = 25;
 
 // Generate HTML
 $html = '<html>
