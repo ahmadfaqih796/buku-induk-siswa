@@ -311,9 +311,9 @@ if ($bulan >= 7) {
             <!-- Sidebar Header    -->
             <div class="sidenav-header d-flex align-items-center justify-content-center">
                 <!-- User Info-->
-                <div class="sidenav-header-inner text-center"><img src="img/Logo.png" alt="person" class="img-fluid rounded-circle">
+                <div class="sidenav-header-inner text-center"><img src="img/logo-sekolah.png" alt="person" class="img-fluid rounded-circle">
                     <h2 class="h5">
-                        <?= $nama; ?> Tes
+                        SDN CAKUNG BARAT 06
                     </h2><span>
                         <?= $level; ?>
                     </span>
@@ -418,9 +418,9 @@ if ($bulan >= 7) {
                     <div class="navbar-holder d-flex align-items-center justify-content-between">
                         <div class="navbar-header">
                             <!-- <a id="toggle-btn" href="#" class="menu-btn">
-                               <i class="icon-bars">
-                               </i>
-                           </a> -->
+                                <i class="icon-bars">
+                                </i>
+                            </a> -->
                             <a href="index.php?hal=" class="navbar-brand">
                                 <div class="brand-text d-none d-md-inline-block"><span></span>
                                     <strong class="text-light">Aplikasi Buku Induk Siswa
