@@ -20,4 +20,3 @@ function getAddress(){
 	return $kata;
 	}
 }
-?>
