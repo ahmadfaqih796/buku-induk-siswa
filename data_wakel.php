@@ -36,15 +36,15 @@
                     if (isset($_GET["cari"])) {
                         $cari = $_GET["cari"];
                         $st = "SELECT * from tbwali_kelas As twk
-							 INNER JOIN tbadmin AS tba ON tba.username=twk.username
-							 INNER JOIN tbkelas AS tbk ON tbk.id_kelas=twk.id_kelas
+							 LEFT JOIN tbadmin AS tba ON tba.username=twk.username
+							 LEFT JOIN tbkelas AS tbk ON tbk.id_kelas=twk.id_kelas
 							 WHERE twk.username LIKE '%$cari%' OR tbk.ruang_kelas like '%$cari%' limit $start,$ph
 							";
                         $la = mysqli_query($connect, $st);
                     } else {
                         $st = "SELECT * from tbwali_kelas As twk
-							 INNER JOIN tbadmin AS tba ON tba.username=twk.username
-							 INNER JOIN tbkelas AS tbk ON tbk.id_kelas=twk.id_kelas limit $start,$ph
+							 LEFT JOIN tbadmin AS tba ON tba.username=twk.username
+							 LEFT JOIN tbkelas AS tbk ON tbk.id_kelas=twk.id_kelas limit $start,$ph
 							";
                         $la = mysqli_query($connect, $st);
                     }
@@ -73,7 +73,7 @@
         </div>
         <?php
         include "pagination.php";
-        pagination($jumhal, $nohal, "data_WaliKelas");
+        pagination($jumhal, $nohal, "data_wakel");
         ?>
     </div>
 </div>
