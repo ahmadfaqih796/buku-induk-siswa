@@ -20,7 +20,7 @@ $dompdf = new Dompdf();
 
 $html = '
 <h4 class="page-header" align="center">LEMBAR NILAI BUKU INDUK PESERTA DIDIK SDN CAKUNG BARAT 06</h4>
-<table border="1">
+<table border="1" style="margin-left: auto; margin-right: auto">
     <tr>
         <th width="5%">No</th>
         <th>Mata Pelajaran</th>
@@ -96,7 +96,7 @@ while ($dpel_a = $lpel_a->fetch_array(MYSQLI_ASSOC)) {
 
 $html .= '<tr>
     <th colspan="2">Kelompok B</th>
-    <th colspan="5"></th>
+    <th colspan="9"></th>
 </tr>';
 
 $jnb_p = 0;
