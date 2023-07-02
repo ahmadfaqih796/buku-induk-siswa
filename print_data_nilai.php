@@ -19,21 +19,33 @@ use Dompdf\Dompdf;
 $dompdf = new Dompdf();
 
 $html = '
+<style>
+	th,
+	td {
+		border: 1px solid black;
+	}
+	td {
+		padding: 5px;
+	}
+	th {
+		padding: 10px;
+	}
+</style>
 <h4 class="page-header" align="center">LEMBAR NILAI BUKU INDUK PESERTA DIDIK SDN CAKUNG BARAT 06</h4>
-<table border="1" style="margin-left: auto; margin-right: auto">
+<table border="1" style="margin-left: auto; margin-right: auto; border-collapse: collapse;">
     <tr>
-        <th width="5%">No</th>
-        <th>Mata Pelajaran</th>
-        <th width="10%" colspan="2">KI - 3 <br>Pengetahuan</th>
-        <th width="10%" colspan="2">KI - 4 <br>Keterampilan</th>
-        <th width="18%" colspan="2">KI - 1 & KI - 2 <br>Spiritual & Sikap Sosial</th>
+        <th style="width: 5%">No</th>
+        <th style="width: 40%">Mata Pelajaran</th>
+        <th style="width: 5%" colspan="2">KI - 3 <br>Pengetahuan</th>
+        <th style="width: 5%" colspan="2">KI - 4 <br>Keterampilan</th>
+        <th style="width: 35%" colspan="2">KI - 1 & KI - 2 <br>Spiritual & Sikap Sosial</th>
     </tr>
     <tr>
         <th colspan="2">Kelompok A</th>
-        <td>Angka</td>
-        <td>Predikat</td>
-        <td>Angka</td>
-        <td>Predikat</td>
+        <td style="width: 50px">Angka</td>
+        <td style="width: 50px">Predikat</td>
+        <td style="width: 50px">Angka</td>
+        <td style="width: 50px">Predikat</td>
         <th colspan="2">Dalam Mapel <br>SB/B/C/K</th>
     </tr>';
 
@@ -86,17 +98,17 @@ while ($dpel_a = $lpel_a->fetch_array(MYSQLI_ASSOC)) {
 	$html .= '<tr>
         <td>' . $no_a++ . '</td>
         <td>' . $dpel_a['nama_pelajaran'] . '</td>
-        <td>' . $ap . '</td>
-        <td>' . $p1 . '</td>
-        <td>' . $ak . '</td>
-        <td>' . $p2 . '</td>
+        <td style="text-align: center;">' . $ap . '</td>
+        <td style="text-align: center;">' . $p1 . '</td>
+        <td style="text-align: center;">' . $ak . '</td>
+        <td style="text-align: center;">' . $p2 . '</td>
         <td colspan="2">' . $dpel_a['angka_sikap'] . '</td>
     </tr>';
 }
 
 $html .= '<tr>
     <th colspan="2">Kelompok B</th>
-    <th colspan="9"></th>
+    <th colspan="6"></th>
 </tr>';
 
 $jnb_p = 0;
@@ -148,28 +160,28 @@ while ($dpel_b = $lpel_b->fetch_array(MYSQLI_ASSOC)) {
 	$html .= '<tr>
         <td>' . $no_b++ . '</td>
         <td>' . $dpel_b['nama_pelajaran'] . '</td>
-        <td>' . $apb . '</td>
-        <td>' . $p1b . '</td>
-        <td>' . $akb . '</td>
-        <td>' . $p2b . '</td>
+        <td style="text-align: center;">' . $apb . '</td>
+        <td style="text-align: center;">' . $p1b . '</td>
+        <td style="text-align: center;">' . $akb . '</td>
+        <td style="text-align: center;">' . $p2b . '</td>
         <td colspan="2">' . $dpel_b['angka_sikap'] . '</td>
     </tr>';
 }
 
 $html .= '<tr>
     <th colspan="2">Jumlah</th>
-    <td>' . $jna_p . '</td>
+    <td style="text-align: center;">' . $jna_p . '</td>
     <td></td>
-    <td>' . $jna_k . '</td>
+    <td style="text-align: center;">' . $jna_k . '</td>
     <td></td>
     <td colspan="2"></td>
 </tr>';
 
 $html .= '<tr>
     <th colspan="2">Rata-rata</th>
-    <td>' . round($jna_p / ($no_a - 1), 2) . '</td>
+    <td style="text-align: center;">' . round($jna_p / ($no_a - 1), 2) . '</td>
     <td></td>
-    <td>' . round($jna_k / ($no_a - 1), 2) . '</td>
+    <td style="text-align: center;">' . round($jna_k / ($no_a - 1), 2) . '</td>
     <td></td>
     <td colspan="2"></td>
 </tr>';
