@@ -12,7 +12,7 @@ if ($jkelas > 0){
 	echo "<script>alert('Kelas Suda Ada!');
 	document.location='index.php?hal=tambah_data_kelas'</script>";
 } else {
-	$simpan = mysqli_query($connect,"insert into tbkelas values ('','$kls','$ruang','$ruang_kelas')");
+	$simpan = mysqli_query($connect,"insert into tbkelas values ('','$kls','$ruang')");
 }
 
 if ($simpan){
@@ -22,4 +22,3 @@ if ($simpan){
 	echo "<script>alert('Tambah Data Kelas Gagal!');
 	document.location='index.php?hal=tambah_data_kelas'</script>";
 }
-?>
