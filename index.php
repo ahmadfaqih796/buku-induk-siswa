@@ -315,7 +315,15 @@ if ($bulan >= 7) {
                     <h2 class="h6">
                         SDN CAKUNG BARAT 06
                     </h2><span>
-                        <?= $level; ?>
+                        <?php
+                        if ($level === "Kurikulum") {
+                            echo "Wakasek Kurikulum";
+                        } else if ($level === "TU") {
+                            echo "Tata Usaha";
+                        } else {
+                            echo $level;
+                        }
+                        ?>
                     </span>
                 </div>
                 <!-- Small Brand information, appears on minimized sidebar-->
