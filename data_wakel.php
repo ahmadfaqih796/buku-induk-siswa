@@ -58,7 +58,7 @@
                             <td><?= $da['kelas']; ?></td>
                             <td>
                                 <a href="index.php?hal=pilih_kelas&username=<?php echo $da['username']; ?>" class="label label-primary">Pilih Kelas</a>
-                                <a href="hapus.php?data=WaliKelas&id=<?= $da['username']; ?>" class="label label-warning" onclick="return confirm('Yakin Hapus ini?')">Hapus</a>
+                                <a href="hapus.php?data=wakel&id=<?= $da['username']; ?>" class="label label-warning" onclick="return confirm('Yakin Hapus ini?')">Hapus</a>
                             </td>
                         </tr>
                     <?php

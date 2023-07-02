@@ -12,6 +12,7 @@ if (isset($_GET['data']) and ($_GET['data'] == "admin")){
 	
 } elseif (isset($_GET['data']) and ($_GET['data'] == "wakel")){
 	mysqli_query($connect,"delete from tbwali_kelas where username = '$id'");
+	mysqli_query($connect,"delete from tbadmin where username = '$id'");
 	header("location:index.php?hal=data_wakel");
 	
 } elseif (isset($_GET['data']) and ($_GET['data'] == "pelajaran")){
@@ -26,4 +27,3 @@ if (isset($_GET['data']) and ($_GET['data'] == "admin")){
 	mysqli_query($connect,"delete from tbkelas where id_kelas = '$id'");
 	header("location:index.php?hal=data_kelas");
 }
-?>
