@@ -7,7 +7,15 @@
 			  		<ul class="nav nav-tabs">
 			  			<li class="active"><a data-toggle="tab" href="#diri" class="active show" aria-expanded="true">Data
 			  					Diri</a></li>
-			  			<li><a data-toggle="tab" href="#nilai" aria-expanded="false">Data Nilai</a></li>
+			  			<?php
+							$ls = mysqli_query($connect, "select COUNT(semester) as semester from tbnilai,tbsiswa where tbnilai.id_siswa=tbsiswa.id_siswa AND tbsiswa.id_siswa=" . $_GET['ids'] . " GROUP BY semester");
+							$js = mysqli_num_rows($ls);
+							if ($js > 0) {
+							?>
+			  				<li><a data-toggle="tab" href="#nilai" aria-expanded="false">Data Nilai</a></li>
+			  			<?php
+							};
+							?>
 			  		</ul>
 
 			  		<div class="tab-content">
