@@ -55,7 +55,7 @@
 
                     <div class="logo text-uppercase" style="margin-top: 20px;">
                         <strong style="color: black;">
-                            Login
+                            Buku Induk Login
                         </strong>
                     </div>
                     <!-- <div class="logo text-uppercase text-wrap"> <strong class="text-warning outer-text"><?= strtoupper($da['nama_Sekolah']) ?></strong> </div> -->
