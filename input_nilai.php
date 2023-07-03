@@ -60,7 +60,7 @@
 			  						<td>
 			  							<select name="semester" class="form-control" style="width:70px">
 			  								<?php
-												for ($i = 1; $i <= 6; $i++) {
+												for ($i = 1; $i <= 2; $i++) {
 													$ls = mysqli_query($connect, "select * from tbnilai,tbsiswa where tbnilai.id_siswa=tbsiswa.id_siswa and tbnilai.semester='$i' and tbsiswa.nm_lengk_siswa = '" . $_GET['nm'] . "'");
 													$js = mysqli_num_rows($ls);
 
