@@ -4,9 +4,7 @@
 					$da = $la->fetch_array(MYSQLI_ASSOC);
 					?>
 			  	<div class="card-header align-text-center">
-			  		<marquee behavior="alternate">
-			  			<h4> Selamat Datang Di Aplikasi Buku Induk Siswa <?= $da['nama_Sekolah'] ?></h4>
-			  		</marquee>
+			  		<h4 class="text-center"> Selamat Datang Di Aplikasi Buku Induk Siswa <?= $da['nama_Sekolah'] ?></h4>
 			  	</div>
 			  	<div class="card-body">
 			  		<div class="table-responsive">
