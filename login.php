@@ -72,6 +72,9 @@
                             <input type="submit" class="btn btn-primary" style="min-width:100% !important; background-color: black;" value="Masuk">
                             <!-- This should be submit button but I replaced it with <a> for demo purposes-->
                         </div>
+                        <div class="form-group text-center">
+                            <a href="">Lupa Password? Hubungi Admin!</a>
+                        </div>
                 </div>
             </div>
         </div>
