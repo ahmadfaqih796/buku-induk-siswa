@@ -84,9 +84,9 @@
 			  						<tr>
 			  							<th width="5%">No</th>
 			  							<th>Mata Pelajaran</th>
-			  							<th width="10%">KI 3 <br>Pengetahuan</th>
-			  							<th width="10%">KI 4 <br>Keterampilan</th>
-			  							<th width="18%">KI 1&2 Sikap <br>Sosial & Spiritual</th>
+			  							<th width="10%">KI - 3 <br>Pengetahuan</th>
+			  							<th width="10%">KI - 4 <br>Keterampilan</th>
+			  							<th width="18%">KI - 1& KI - 2<br>Sikap Sosial & Spiritual</th>
 			  						</tr>
 			  						<tr>
 			  							<th colspan="2">Kelompok A</th>
