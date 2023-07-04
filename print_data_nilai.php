@@ -186,12 +186,27 @@ $html .= '<tr>
     <td colspan="2"></td>
 </tr>';
 
-$html .= '</table>';
+$html .= '
+</table>
+<div
+style="
+  width: 300px;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+"
+>
+<p style="margin-bottom: -10px">Jakarta, 02 Juli 2023</p>
+<p style="margin-bottom: 100px">Kepala SDN Cakung Barat 06,</p>
+
+<p style="margin-bottom: -10px">TUSANTO, S.Pd, M.Si</p>
+<p>NIP. 196409121986031014</p>
+</div>
+';
 
 $dompdf->loadHtml($html);
 
 $dompdf->render();
-
 
 // Set header untuk file PDF
 header('Content-Type: application/pdf');
