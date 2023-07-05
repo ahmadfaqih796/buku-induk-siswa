@@ -52,7 +52,9 @@ $html = '<html>
          <td>: ' . $data['nisn'] . '</td>
       </tr>
    </table>
+   <div style="margin-bottom: 10px"></div>
    <b>A. KETERANGAN PRIBADI SISWA</b>
+   <div style="margin-bottom: 10px"></div>
    <table>
       <tr>
          <td width="20%">Nama Lengkap</td>
@@ -91,7 +93,9 @@ $html = '<html>
          <td>: ' . $data['bahasa'] . '</td>
       </tr>
    </table>
+   <div style="margin-bottom: 10px"></div>
    <b>B. KETERANGAN TEMPAT TINGGAL SISWA</b>
+   <div style="margin-bottom: 10px"></div>
    <table>
       <tr>
          <td>Alamat Peserta Didik</td>
@@ -110,7 +114,9 @@ $html = '<html>
          <td>: ' . $data['transportasi'] . '</td>
       </tr>
    </table>
+   <div style="margin-bottom: 10px"></div>
    <b>C. KETERANGAN JASMANI DAN KESEHATAN SISWA</b>
+   <div style="margin-bottom: 10px"></div>
    <table>
       <tr>
          <td>Berat badan pada waktu diterima </td>
@@ -133,7 +139,9 @@ $html = '<html>
          <td>: ' . $data['goldar'] . '</td>
       </tr>
    </table>
+   <div style="margin-bottom: 10px"></div>
    <b>D. KETERANGAN TENTANG PENDIDIKAN SEBELUMNYA</b>
+   <div style="margin-bottom: 10px"></div>
    <table>
       <tr>
          <td>Diterima di sekolah ini sebagai siswa baru tanggal</td>
@@ -173,6 +181,7 @@ $html = '<html>
    </table>
    <div class="page-break"></div>
    <b>E. KETERANGAN TENTANG ORANG TUA KANDUNG</b>
+   <div style="margin-bottom: 30px"></div>
    <table border="1" class="tabel">
       <tr>
          <th>Data Orang Tua Kandung</th>
