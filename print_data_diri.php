@@ -20,6 +20,19 @@ $html = '<html>
     .page-break {
         page-break-before: always;
     }
+    .tabel {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tabel,
+    .tabel th,
+    .tabel td {
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    .tabel td {
+      padding: 10px;
+    }
     </style>
    <br>
    <h4 class="page-header" align="center">LEMBAR BUKU INDUK PESERTA DIDIK SDN CAKUNG BARAT 06</h4>
@@ -160,7 +173,7 @@ $html = '<html>
    </table>
    <div class="page-break"></div>
    <b>E. KETERANGAN TENTANG ORANG TUA KANDUNG</b>
-   <table border="1">
+   <table border="1" class="tabel">
       <tr>
          <th>Data Orang Tua Kandung</th>
          <th>Ayah</th>
@@ -202,6 +215,20 @@ $html = '<html>
          <td>' . $data['alamat_ibu'] . '</td>
       </tr>
    </table>
+   <div
+   style="
+   width: 300px;
+   text-align: center;
+   font-weight: 700;
+   margin-left: auto;
+   "
+   >
+   <p style="margin-bottom: -10px">Jakarta, 02 Juli 2023</p>
+   <p style="margin-bottom: 100px">Kepala SDN Cakung Barat 06,</p>
+
+   <p style="margin-bottom: -10px">TUSANTO, S.Pd, M.Si</p>
+   <p>NIP. 196409121986031014</p>
+   </div>
 </body>
 
 </html>';
