@@ -8,7 +8,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas I</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='I'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='I' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
@@ -23,7 +23,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas II</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='II'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='II' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
@@ -38,7 +38,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas III</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='III'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='III' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
@@ -55,7 +55,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas IV</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='IV'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='IV' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
@@ -70,7 +70,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas V</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='V'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='V' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
@@ -85,7 +85,7 @@
 			  				<div class="col-12 col-sm-4">
 			  					<h2 class="page-header">Kelas VI</h2>
 			  					<?php
-									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='VI'");
+									$lkelas1 = mysqli_query($connect, "select * from tbkelas where kelas ='VI' ORDER BY ruang");
 									while ($dkelas1 = $lkelas1->fetch_array(MYSQLI_ASSOC)) {
 									?>
 			  						<div class="bagi-kelas text-center">
