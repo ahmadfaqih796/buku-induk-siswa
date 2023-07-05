@@ -15,7 +15,7 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 		<th>Mata Pelajaran</th>
 		<th width="10%" colspan="2">KI - 3 <br>Pengetahuan</th>
 		<th width="10%" colspan="2">KI - 4 <br>Keterampilan</th>
-		<th width="18%" colspan="2">KI - 1& KI - 2 <br>Sikap Sosial & Spiritual</th>
+		<th width="18%" colspan="2">KI - 1 & KI - 2 <br>Spiritual & Sikap Sosial</th>
 	</tr>
 	<tr>
 		<th colspan="2">Kelompok A</th>
