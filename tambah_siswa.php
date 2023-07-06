@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h4><?=getAddress();?></h4>
+        <h4><?= getAddress(); ?></h4>
     </div>
     <div class="card-body">
         <form method="post" action="proses_tambah_siswa.php">
@@ -116,113 +116,132 @@
                 <legend>D. Keterangan Tentang Siswa/Siswi</legend>
                 <div class="form-group">
                     <label>Diterima disekolah ini sebagai siswa baru tanggal <font color="red">*</font></label>
-                    <div class="form-group">
-                        <label>Alamat Sekolah <font color="red">*</font></label>
-                        <input type="text" class="form-control" name="alamat_sd">
-                    </div>
-                    <div class="form-group">
-                        <label>Tanggal <font color="red">*</font></label>
-                        <input type="text" class="form-control" name="tgl_ijazah_sd" id="tanggals">
-                    </div>
-                    <div class="form-group">
-                        <label>No Ijazah <font color="red">*</font></label>
-                        <input type="text" class="form-control" name="no_ijazah_sd">
-                    </div>
-                    <div class="form-group">
-                        <label>Diterima disekolah ini sebagai siswa pindahan tanggal</label>
-                        <input type="text" class="form-control" name="tgl_diterima_pindahan">
-                    </div>
-                    <div class="form-group">
-                        <label>Dikelas</label>
-                        <input type="text" class="form-control" name="kelas_diterima">
+                    <td><input type="text" class="form-control" name="tgl_diterima"></td>
+                </div>
+                <div class="form-group">
+                    <label>Alamat Sekolah <font color="red">*</font></label>
+                    <input type="text" class="form-control" name="alamat_sd">
+                </div>
+                <div class="form-group">
+                    <label>Asal Sekolah Dasar <font color="red">*</font></label>
+                    <input type="text" class="form-control" name="asal_sd">
+                </div>
+                <div class="form-group">
+                    <label>Tanggal <font color="red">*</font></label>
+                    <input type="text" class="form-control" name="tgl_ijazah_sd" id="tanggals">
+                </div>
+                <div class="form-group">
+                    <label>No Ijazah <font color="red">*</font></label>
+                    <input type="text" class="form-control" name="no_ijazah_sd">
+                </div>
+                <div class="form-group">
+                    <label>Diterima disekolah ini sebagai siswa pindahan tanggal</label>
+                    <input type="text" class="form-control" name="tgl_diterima_pindahan">
+                </div>
+                <div class="form-group">
+                    <label>Dikelas</label>
+                    <input type="text" class="form-control" name="kelas_diterima">
+                </div>
+                <div class="form-group">
+                    <label>Dari SMP</label>
+                    <input type="text" class="form-control" name="dari_smp">
+                </div>
+                <div class="form-group">
+                    <label>Alamat SMP</label>
+                    <input type="text" class="form-control" name="alamat_smp">
+                </div>
+                <div class="form-group">
+                    <label>Asal SD/ No Ijazah</label>
+                    <input type="text" class="form-control" name="asal_no_ijazah_sd_pindahan">
+                </div>
+                <div class="form-group">
+                    <label>Alamat SD</label>
+                    <input type="text" class="form-control" name="alamat_sd_pindahan">
+                </div>
+                <div class="form-group">
+                    <label>Alasan pindah ke sekolah ini</label>
+                    <input type="text" class="form-control" name="alasan_pindah">
+                </div>
+                <br>
+                <legend>E. Keterangan Tentang Orang Tua Kandung</legend>
+                <div class="row">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <label>Alamat SD</label>
-                            <input type="text" class="form-control" name="alamat_sd_pindahan">
+                            <label>Nama Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="nm_ayah" required="required">
                         </div>
                         <div class="form-group">
-                            <label>Alasan pindah ke sekolah ini</label>
-                            <input type="text" class="form-control" name="alasan_pindah">
+                            <label>Tempat Lahir Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="tmpt_lhr_ayah">
                         </div>
-                        <br>
-                        <legend>E. Keterangan Tentang Orang Tua Kandung</legend>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Nama Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="nm_ayah" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Tempat Lahir Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="tmpt_lhr_ayah">
-                                </div>
-                                <div class="form-group">
-                                    <label>Tanggal Lahir Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="tgl_lhr_ayah" id="tanggala">
-                                </div>
-                                <div class="form-group">
-                                    <label>Kewarganegaraan Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="kwn_ayah">
-                                </div>
-                                <div class="form-group">
-                                    <label>Pendidikan Tertinggi Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="pnd_ayah">
-                                </div>
-                                <div class="form-group">
-                                    <label>Pekerjaan Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="pekerjaan_ayah">
-                                </div>
-                                <div class="form-group">
-                                    <label>Penghasilan /bulan/tahun Ayah</label>
-                                    <input type="text" class="form-control" name="penghasilan_ayah">
-                                </div>
-                                <div class="form-group">
-                                    <label>Alamat Ayah <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="alamat_ayah" id="tanggala">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Nama Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="nm_ibu" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Tempat Lahir Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="tmpt_lhr_ibu">
-                                </div>
-                                <div class="form-group">
-                                    <label>Tanggal Lahir Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="tgl_lhr_ibu" id="tanggali">
-                                </div>
-                                <div class="form-group">
-                                    <label>Kewarganegaraan Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="kwn_ibu">
-                                </div>
-                                <div class="form-group">
-                                    <label>Pendidikan Tertinggi Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="pnd_ibu">
-                                </div>
-                                <div class="form-group">
-                                    <label>Pekerjaan Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="pekerjaan_ibu">
-                                </div>
-                                <div class="form-group">
-                                    <label>Penghasilan /bulan/tahun Ibu</label>
-                                    <input type="text" class="form-control" name="penghasilan_ibu">
-                                </div>
-                                <div class="form-group">
-                                    <label>Alamat Ibu <font color="red">*</font></label>
-                                    <input type="text" class="form-control" name="alamat_ibu">
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label>Tanggal Lahir Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="tgl_lhr_ayah" id="tanggala">
                         </div>
+                        <div class="form-group">
+                            <label>Kewarganegaraan Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="kwn_ayah">
+                        </div>
+                        <div class="form-group">
+                            <label>Pendidikan Tertinggi Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="pnd_ayah">
+                        </div>
+                        <div class="form-group">
+                            <label>Pekerjaan Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="pekerjaan_ayah">
+                        </div>
+                        <div class="form-group">
+                            <label>Penghasilan /bulan/tahun Ayah</label>
+                            <input type="text" class="form-control" name="penghasilan_ayah">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Ayah <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="alamat_ayah" id="tanggala">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Nama Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="nm_ibu" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Tempat Lahir Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="tmpt_lhr_ibu">
+                        </div>
+                        <div class="form-group">
+                            <label>Tanggal Lahir Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="tgl_lhr_ibu" id="tanggali">
+                        </div>
+                        <div class="form-group">
+                            <label>Kewarganegaraan Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="kwn_ibu">
+                        </div>
+                        <div class="form-group">
+                            <label>Pendidikan Tertinggi Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="pnd_ibu">
+                        </div>
+                        <div class="form-group">
+                            <label>Pekerjaan Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="pekerjaan_ibu">
+                        </div>
+                        <div class="form-group">
+                            <label>Penghasilan /bulan/tahun Ibu</label>
+                            <input type="text" class="form-control" name="penghasilan_ibu">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Ibu <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="alamat_ibu">
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Simpan">
-                            <input type="reset" class="btn btn-danger" value="Batal">
-                            <div style="font-size:13px;font-style:italic;">
-                                <font color="red">*</font> Wajib diisi
-                            </div>
-                        </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Simpan">
+                    <input type="reset" class="btn btn-danger" value="Batal">
+                    <div style="font-size:13px;font-style:italic;">
+                        <font color="red">*</font> Wajib diisi
+                    </div>
+                </div>
             </fieldset>
         </form>
     </div>

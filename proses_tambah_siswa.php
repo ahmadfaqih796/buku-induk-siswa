@@ -52,7 +52,7 @@ $penghasilan_ibu = $_POST['penghasilan_ibu'];
 $alamat_ibu = $_POST['alamat_ibu'];
 
 
-$simpan = mysqli_query($connect,"insert into tbsiswa values ('','',
+$simpan = mysqli_query($connect, "insert into tbsiswa values ('','',
 '$nisn',
 '$nm_lengk_siswa',
 '$nm_pang_siswa',
@@ -103,13 +103,12 @@ $simpan = mysqli_query($connect,"insert into tbsiswa values ('','',
 '$penghasilan_ibu',
 '$alamat_ibu',
 ' '
-)") or die (mysqli_error());
+)");
 
-if ($simpan){
+if ($simpan) {
 	echo "<script>alert('Tambah Data Siswa Berhasil!');
 	document.location='index.php?hal=data_siswa'</script>";
 } else {
 	echo "<script>alert('Tambah Data Siswa Gagal!');
 	document.location='index.php?hal=tambah_data_siswa'</script>";
 }
-?>
