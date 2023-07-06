@@ -92,7 +92,7 @@ tgl_lhr_ibu='$tgl_lhr_ibu',
 pend_ibu='$pnd_ibu',
 pekerjaan_ibu='$pekerjaan_ibu',
 penghasilan_ibu='$penghasilan_ibu',
-alamat_ibu='$alamat_ibu' where id_siswa='$ids'") or die (mysqli_error());
+alamat_ibu='$alamat_ibu' where id_siswa='$ids'");
 if ($ubah)
 {
 	header("location:index.php?hal=data_siswa&berhasil=ok");
@@ -102,4 +102,3 @@ else
 	echo"<script>alert('Data Gagal Diubah')
 	document.location='index.php?hal=data_siswa'</script>";
 }
-?>
