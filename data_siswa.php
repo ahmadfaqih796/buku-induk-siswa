@@ -38,7 +38,7 @@
 									} else {
 										$nohal = 1;
 									}
-									$ph = 20;
+									$ph = 10;
 									$start = ($nohal - 1) * $ph;
 									$no = $start + 1;
 
@@ -77,13 +77,12 @@
 										$no++;
 									}
 
-									//   if ($level == "Wali Kelas"){
-									//   $lb = mysqli_query($connect,"select * from tbsiswa where id_kelas='".$dwakel['id_kelas']."'");
-									//   } else {
-									//   $lb = mysqli_query($connect,"select * from tbsiswa");
-									//   }
-
-									$jd = mysqli_num_rows($la);
+									if ($level == "Wali Kelas") {
+										$lb = mysqli_query($connect, "select * from tbsiswa where id_kelas='" . $dwakel['id_kelas'] . "'");
+									} else {
+										$lb = mysqli_query($connect, "select * from tbsiswa");
+									}
+									$jd = mysqli_num_rows($lb);
 									$jumhal = ceil($jd / $ph);
 									?>
 			  				</tbody>
