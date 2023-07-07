@@ -10,7 +10,10 @@
 						?>
 			  		<form method="post" action="proses_edit_siswa.php?ids=<?php echo $dsiswa['id_siswa']; ?>">
 			  			<table class="table table-bordered">
-
+			  				<tr>
+			  					<td>NIS</td>
+			  					<td><input type="text" class="form-control" name="nis" value="<?= $dsiswa['NIS']; ?>"></td>
+			  				</tr>
 			  				<tr>
 			  					<td>NISN</td>
 			  					<td><input type="text" class="form-control" name="nisn" value="<?= $dsiswa['nisn']; ?>"></td>

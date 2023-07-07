@@ -1,6 +1,7 @@
 <?php
-include"koneksi.php";
-$ids=$_GET['ids'];
+include "koneksi.php";
+$ids = $_GET['ids'];
+$nis = $_POST['nis'];
 $nisn = $_POST['nisn'];
 $nm_lengk_siswa = $_POST['nm_lengk_siswa'];
 $nm_pang_siswa = $_POST['nm_pang_siswa'];
@@ -47,7 +48,8 @@ $pekerjaan_ibu = $_POST['pekerjaan_ibu'];
 $penghasilan_ibu = $_POST['penghasilan_ibu'];
 $alamat_ibu = $_POST['alamat_ibu'];
 
-$ubah=mysqli_query($connect,"UPDATE tbsiswa set 
+$ubah = mysqli_query($connect, "UPDATE tbsiswa set 
+NIS='$nis',
 nisn='$nisn',
 nm_lengk_siswa='$nm_lengk_siswa',
 nm_pang_siswa='$nm_pang_siswa',
@@ -93,12 +95,9 @@ pend_ibu='$pnd_ibu',
 pekerjaan_ibu='$pekerjaan_ibu',
 penghasilan_ibu='$penghasilan_ibu',
 alamat_ibu='$alamat_ibu' where id_siswa='$ids'");
-if ($ubah)
-{
+if ($ubah) {
 	header("location:index.php?hal=data_siswa&berhasil=ok");
-}
-else
-{
-	echo"<script>alert('Data Gagal Diubah')
+} else {
+	echo "<script>alert('Data Gagal Diubah')
 	document.location='index.php?hal=data_siswa'</script>";
 }
