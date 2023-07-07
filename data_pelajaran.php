@@ -62,7 +62,7 @@
 			  							<th scope="row"><?= $no; ?></th>
 			  							<td><?= $da['nama_pelajaran']; ?></td>
 			  							<td>
-			  								<center><?= $da['kkm_7']; ?></center>
+			  								<center><?= $da['kkm_1']; ?></center>
 			  							</td>
 			  							<td>
 			  								<center><?= $da['kkm_2']; ?></center>
