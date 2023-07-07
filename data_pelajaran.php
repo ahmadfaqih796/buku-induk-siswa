@@ -88,7 +88,11 @@
 			  					<?php
 										$no++;
 									}
-									$lb = mysqli_query($connect, "select * from tbpelajaran");
+									if ($cari) {
+										$lb = "select * from tbpelajaran WHERE nama_pelajaran like '%$cari%'";
+									} else {
+										$lb = mysqli_query($connect, "select * from tbpelajaran");
+									}
 									$jd = mysqli_num_rows($lb);
 									$jumhal = ceil($jd / $ph);
 									?>
