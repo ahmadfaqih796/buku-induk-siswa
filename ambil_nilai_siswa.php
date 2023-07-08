@@ -5,7 +5,6 @@ if (isset($_GET['semester'])) {
 } else {
 	$sm = 1;
 }
-echo $sm;
 $lsiswa = mysqli_query($connect, "select * from tbsiswa,tbkelas where tbsiswa.id_kelas=tbkelas.id_kelas and tbsiswa.id_siswa = '" . $_GET['ids'] . "'");
 $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 ?>
@@ -182,15 +181,21 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 
 	?>
 	<tr>
-		<td colspan="2">Jumlah Nilai <?= $jns; ?></td>
+		<td colspan="2">Jumlah Nilai</td>
 		<td colspan="2"><?= ($jna_p + $jnb_p); ?></td>
 		<td colspan="2"><?= ($jna_k + $jnb_k); ?></td>
 	</tr>
 	<tr>
+		<td colspan="2">Jumlah Total Nilai</td>
+		<td colspan="4"><?= $jns; ?></td>
+	</tr>
+	<tr>
+
 		<td colspan="2">Nilai Rata-rata</td>
 		<td colspan="2"><?= ceil(($jna_p + $jnb_p) / $jpel); ?></td>
 		<td colspan="2"><?= ceil(($jna_k + $jnb_k) / $jpel); ?></td>
 	</tr>
+
 	<tr>
 		<td colspan="2">Ranking</td>
 		<td colspan="4"><?= $rank; ?></td>
