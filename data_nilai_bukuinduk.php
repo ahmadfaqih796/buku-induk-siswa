@@ -18,6 +18,7 @@
 										}
 										?>
 									</select>
+									<input type="date" class="form-control" name="tgl" id="tanggal" style="width: 200px;">
 									<!-- <select name="semester" class="form-control" id="pilih-semester" style="width:70px">
 										<option value="1">1</option>
 										<option value="2">2</option>

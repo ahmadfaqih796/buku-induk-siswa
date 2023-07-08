@@ -21,7 +21,7 @@
 			  			<table class="table table-striped table-hover table-bordered">
 			  				<thead>
 			  					<tr>
-			  						<th>No</th>
+			  						<th>Nosss</th>
 			  						<th>NIS</th>
 			  						<th>Nama Lengkap</th>
 			  						<th>Jenis Kelamin</th>
