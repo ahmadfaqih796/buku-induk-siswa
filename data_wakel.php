@@ -19,6 +19,7 @@
                         <th>Nama</th>
                         <th>Tanggal Lahir</th>
                         <th>Kelas</th>
+                        <th>Ruang</th>
                         <th width="15%">Aksi</th>
                     </tr>
                 </thead>
@@ -56,6 +57,7 @@
                             <td><?= $da['nama_lengkap']; ?></td>
                             <td><?= $da['tempat_lahir']; ?>, <?= $da['tgl_lahir']; ?></td>
                             <td><?= $da['kelas']; ?></td>
+                            <td><?= $da['ruang']; ?></td>
                             <td>
                                 <a href="index.php?hal=pilih_kelas&username=<?php echo $da['username']; ?>" class="label label-primary">Pilih Kelas</a>
                                 <a href="hapus.php?data=wakel&id=<?= $da['username']; ?>" class="label label-warning" onclick="return confirm('Yakin Hapus ini?')">Hapus</a>
