@@ -263,7 +263,6 @@ $html = '<html>
    margin-left: auto;
    "
    >
-   <p style="margin-bottom: -10px">Jakarta, 02 Juli 2023</p>
    <p style="margin-bottom: 100px">Kepala SDN Cakung Barat 06,</p>
 
    <p style="margin-bottom: -10px">TUSANTO, S.Pd, M.Si</p>
