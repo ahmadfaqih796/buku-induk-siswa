@@ -3,13 +3,12 @@
 			  		<h4>Edit Admin</h4>
 			  	</div>
 			  	<div class="card-body">
-
 			  		<?php
 						$uid = $_GET['edit'];
 						$tampil = mysqli_query($connect, "select * from tbadmin where id_admin ='$uid'");
 						$data = $tampil->fetch_array(MYSQLI_ASSOC);
 						?>
-			  		<form method="post" action="proses_edit_admin.php?udi=<?php echo $data['id_admin']; ?>">
+			  		<form method="post" action="proses_edit_admin.php?udi=<?= $data['id_admin']; ?>&profil=<?= $_GET['profil'] ?>">
 			  			<div class="form-group">
 			  				<label>NIP/NUPTK</label>
 			  				<input type="text" class="form-control" name="nip_nuptk" value="<?php echo $data['nip_nuptk']; ?>">
