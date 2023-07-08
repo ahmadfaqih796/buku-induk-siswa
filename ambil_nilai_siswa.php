@@ -35,13 +35,22 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 		$ap = $dpel_a['angka_pengetahuan'];
 		$ak = $dpel_a['angka_keterampilan'];
 
-		if ($dsiswa['kelas'] == "VII") {
-			$kkm = $dpel_a['kkm_7'];
-		} elseif ($dsiswa['kelas'] == "VIII") {
-			$kkm = $dpel_a['kkm_8'];
+		if ($dsiswa['kelas'] == "I") {
+			$kkm = $dpel_a['kkm_1'];
+		} elseif ($dsiswa['kelas'] == "II") {
+			$kkm = $dpel_a['kkm_2'];
+		} elseif ($dsiswa['kelas'] == "III") {
+			$kkm = $dpel_a['kkm_3'];
+		} elseif ($dsiswa['kelas'] == "IV") {
+			$kkm = $dpel_a['kkm_4'];
+		} elseif ($dsiswa['kelas'] == "V") {
+			$kkm = $dpel_a['kkm_5'];
+		} elseif ($dsiswa['kelas'] == "VI") {
+			$kkm = $dpel_a['kkm_6'];
 		} else {
-			$kkm = $dpel_a['kkm_9'];
+			$kkm = $dpel_a['kkm_1'];
 		}
+
 
 		$rentang = (100 - $kkm) / 3;
 
@@ -110,7 +119,7 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 		} elseif ($dsiswa['kelas'] == "VI") {
 			$kkmb = $dpel_b['kkm_6'];
 		} else {
-			$kkmb = $dpel_b['kkm_5'];
+			$kkmb = $dpel_b['kkm_1'];
 		}
 
 		$rentangb = (100 - $kkmb) / 3;
