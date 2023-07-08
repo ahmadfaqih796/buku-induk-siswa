@@ -7,6 +7,8 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 
 $ns = str_replace(" ", "_", $dsiswa['nm_lengk_siswa']);
 $nama_file = date("Y-m-d") . "_data_nilai_" . $ns;
+$tgl = $_POST['tgl'];
+$tgl = "Jakarta, 02 Juli 2023";
 
 if (isset($_POST['semester'])) {
 	$sm = $_POST['semester'];
@@ -196,7 +198,7 @@ style="
   margin-left: auto;
 "
 >
-<p style="margin-bottom: -10px">Jakarta, 02 Juli 2023</p>
+<p style="margin-bottom: -10px">' . $tgl . '</p>
 <p style="margin-bottom: 100px">Kepala SDN Cakung Barat 06,</p>
 
 <p style="margin-bottom: -10px">TUSANTO, S.Pd, M.Si</p>
