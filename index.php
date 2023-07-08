@@ -356,6 +356,7 @@ if ($bulan >= 7) {
                     <h5 class="sidenav-heading">Pengaturan</h5>
                     <ul id="side-lap-menu" class="side-menu list-unstyled">
                         <li> <a href="index.php?hal="> <i class="fa fa-book"> </i>Profil Sekolah</a></li>
+                        <li <?= getAktif("profil_akun"); ?>><a href="index.php?hal=profil_akun"> <i class="fa fa-user"> </i>Profil Akun</a></li>
                     </ul>
                 </div>
             <?php } ?>
@@ -444,6 +445,10 @@ if ($bulan >= 7) {
                                     <?= $nama; ?>
                                 </button>
                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="index.php?hal=profil_akun">
+                                        <i class="fa fa-user"></i>
+                                        Profile Akun
+                                    </a>
                                     <a class="dropdown-item" href="logout.php" onclick="return confirm('Anda yakin ingin keluar?')">
                                         <i class="fa fa-sign-out"></i>
                                         Logout
@@ -530,6 +535,8 @@ if ($bulan >= 7) {
                             include "detail_siswa.php";
                         } elseif (isset($_GET['hal']) and ($_GET['hal'] == "data_diri_bukuinduk")) {
                             include "data_diri_bukuinduk.php";
+                        } elseif (isset($_GET['hal']) and ($_GET['hal'] == "profil_akun")) {
+                            include "profil_akun.php";
                         } else {
                             include "profil.php";
                         }

@@ -199,7 +199,6 @@
 			  			</table>
 			  			<div class="form-group">
 			  				<input type="submit" class="btn btn-primary" value="Edit">
-			  				<input type="reset" class="btn btn-danger" value="Batal">
 			  			</div>
 			  			</fieldset>
 			  		</form>
