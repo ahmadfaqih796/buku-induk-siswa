@@ -385,7 +385,12 @@ if ($bulan >= 7) {
                         <li> <a href="index.php?hal=buku_induk"> <i class="fa fa-book"> </i>Buku Induk</a></li>
                     </ul>
                 </div>
-
+                <div class="lap-menu">
+                    <h5 class="sidenav-heading">Pengaturan</h5>
+                    <ul id="side-lap-menu" class="side-menu list-unstyled">
+                        <li <?= getAktif("profil_akun"); ?>><a href="index.php?hal=profil_akun"> <i class="fa fa-user"> </i>Profil Akun</a></li>
+                    </ul>
+                </div>
             <?php } ?>
             <?php if ($level == "TU") { ?>
                 <div class="main-menu">
@@ -401,7 +406,12 @@ if ($bulan >= 7) {
                         <li> <a href="index.php?hal=buku_induk"> <i class="fa fa-book"> </i>Buku Induk</a></li>
                     </ul>
                 </div>
-
+                <div class="lap-menu">
+                    <h5 class="sidenav-heading">Pengaturan</h5>
+                    <ul id="side-lap-menu" class="side-menu list-unstyled">
+                        <li <?= getAktif("profil_akun"); ?>><a href="index.php?hal=profil_akun"> <i class="fa fa-user"> </i>Profil Akun</a></li>
+                    </ul>
+                </div>
             <?php } ?>
             <?php if ($level == "Wali Kelas") { ?>
                 <div class="main-menu">
@@ -417,7 +427,12 @@ if ($bulan >= 7) {
                         <li> <a href="index.php?hal=input_nilai"> <i class="fa fa-pencil"> </i>Input Nilai Siswa</a></li>
                     </ul>
                 </div>
-
+                <div class="lap-menu">
+                    <h5 class="sidenav-heading">Pengaturan</h5>
+                    <ul id="side-lap-menu" class="side-menu list-unstyled">
+                        <li <?= getAktif("profil_akun"); ?>><a href="index.php?hal=profil_akun"> <i class="fa fa-user"> </i>Profil Akun</a></li>
+                    </ul>
+                </div>
             <?php } ?>
         </div>
     </nav>
