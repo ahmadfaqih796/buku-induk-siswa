@@ -8,8 +8,38 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 $ns = str_replace(" ", "_", $dsiswa['nm_lengk_siswa']);
 $nama_file = date("Y-m-d") . "_data_nilai_" . $ns;
 
+function tgl_indo($tanggal)
+{
+	$bulan = array(
+		1 =>   'Januari',
+		'Februari',
+		'Maret',
+		'April',
+		'Mei',
+		'Juni',
+		'Juli',
+		'Agustus',
+		'September',
+		'Oktober',
+		'November',
+		'Desember'
+	);
+	$pecahkan = explode('-', $tanggal);
+
+	// variabel pecahkan 0 = tanggal
+	// variabel pecahkan 1 = bulan
+	// variabel pecahkan 2 = tahun
+
+	return $pecahkan[2] . ' ' . $bulan[(int)$pecahkan[1]] . ' ' . $pecahkan[0];
+}
+
 if (isset($_POST['tgl'])) {
-	$tgl = $_POST['tgl'];
+	$date = date_create($_POST['tgl']);
+	$tgl1 =  date_format($date, "d F Y");
+	// $tgl = "Jakarta, $tgl1";
+	// $tgl = "Jakarta, " + tgl_indo($_POST['tgl']);
+	$tgl = "Jakarta, " . tgl_indo($_POST['tgl']) . "";
+	// echo $_POST['tgl'];
 } else {
 	$tgl = "Jakarta, 02 Juli 2023";
 }
