@@ -182,46 +182,77 @@ $html = '<html>
    <div class="page-break"></div>
    <b>E. KETERANGAN TENTANG ORANG TUA KANDUNG</b>
    <div style="margin-bottom: 30px"></div>
-   <table border="1" class="tabel">
-      <tr>
-         <th>Data Orang Tua Kandung</th>
-         <th>Ayah</th>
-         <th>Ibu</th>
-      </tr>
+   <b>A. AYAH KANDUNG</b>
+   <div style="margin-bottom: 10px"></div>
+   <table>
       <tr>
          <td>Nama</td>
-         <td>' . $data['nama_ayah'] . '</td>
-         <td>' . $data['nama_ibu'] . '</td>
+         <td>: ' . $data['nama_ayah'] . '</td>
       </tr>
       <tr>
          <td>Tempat & tanggal lahir</td>
-         <td>' . $data['tmpt_lhr_ayah'] . '</td>
-         <td>' . $data['tmpt_lhr_ibu'] . '</td>
-      </tr>
-      <tr>
-         <td>Kewarganegaraan</td>
-         <td>' . $data['tgl_lhr_ayah'] . '</td>
-         <td>' . $data['tgl_lhr_ibu'] . '</td>
-      </tr>
-      <tr>
-         <td>Pendidikan Tertinggi</td>
-         <td>' . $data['pend_ayah'] . '</td>
-         <td>' . $data['pend_ibu'] . '</td>
-      </tr>
-      <tr>
-         <td>Pekerjaan</td>
-         <td>' . $data['pekerjaan_ayah'] . '</td>
-         <td>' . $data['pekerjaan_ibu'] . '</td>
-      </tr>
-      <tr>
-         <td>Penghasilan/bulan/tahun</td>
-         <td>' . $data['penghasilan_ayah'] . '</td>
-         <td>' . $data['penghasilan_ibu'] . '</td>
+         <td>: ' . $data['tmpt_lhr_ayah'] . '</td>
       </tr>
       <tr>
          <td>Alamat</td>
-         <td>' . $data['alamat_ayah'] . '</td>
-         <td>' . $data['alamat_ibu'] . '</td>
+         <td>: ' . $data['alamat_sd'] . '</td>
+      </tr>
+      <tr>
+         <td>Kewarganegaraan</td>
+         <td>:' . $data['tgl_lhr_ayah'] . '</td>
+      </tr>
+      <tr>
+         <td>Pendidikan Tertinggi</td>
+         <td>:' . $data['pend_ayah'] . '</td>
+      </tr>
+      <tr>
+         <td>Pekerjaan</td>
+         <td>:' . $data['pekerjaan_ayah'] . '</td>
+      </tr>
+      <tr>
+         <td>Penghasilan/bulan/tahun</td>
+         <td>:' . $data['penghasilan_ayah'] . '</td>
+      </tr>
+      <tr>
+         <td>Alamat</td>
+         <td>:' . $data['alamat_ayah'] . '</td>
+      </tr>
+   </table>
+   <div style="margin-bottom: 30px"></div>
+   <b>B. IBU KANDUNG</b>
+   <div style="margin-bottom: 10px"></div>
+   <table>
+      <tr>
+         <td>Nama</td>
+         <td>: ' . $data['nama_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Tempat & tanggal lahir</td>
+         <td>: ' . $data['tmpt_lhr_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Alamat</td>
+         <td>: ' . $data['alamat_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Kewarganegaraan</td>
+         <td>:' . $data['tgl_lhr_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Pendidikan Tertinggi</td>
+         <td>:' . $data['pend_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Pekerjaan</td>
+         <td>:' . $data['pekerjaan_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Penghasilan/bulan/tahun</td>
+         <td>:' . $data['penghasilan_ibu'] . '</td>
+      </tr>
+      <tr>
+         <td>Alamat</td>
+         <td>:' . $data['alamat_ibu'] . '</td>
       </tr>
    </table>
    <div

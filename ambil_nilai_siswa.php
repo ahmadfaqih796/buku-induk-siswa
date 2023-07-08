@@ -5,6 +5,7 @@ if (isset($_GET['semester'])) {
 } else {
 	$sm = 1;
 }
+echo $sm;
 $lsiswa = mysqli_query($connect, "select * from tbsiswa,tbkelas where tbsiswa.id_kelas=tbkelas.id_kelas and tbsiswa.id_siswa = '" . $_GET['ids'] . "'");
 $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 ?>
@@ -96,12 +97,20 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 		$apb = $dpel_b['angka_pengetahuan'];
 		$akb = $dpel_b['angka_keterampilan'];
 
-		if ($dsiswa['kelas'] == "VII") {
-			$kkmb = $dpel_b['kkm_7'];
-		} elseif ($dsiswa['kelas'] == "VIII") {
-			$kkmb = $dpel_b['kkm_8'];
+		if ($dsiswa['kelas'] == "I") {
+			$kkmb = $dpel_b['kkm_1'];
+		} elseif ($dsiswa['kelas'] == "II") {
+			$kkmb = $dpel_b['kkm_2'];
+		} elseif ($dsiswa['kelas'] == "III") {
+			$kkmb = $dpel_b['kkm_3'];
+		} elseif ($dsiswa['kelas'] == "IV") {
+			$kkmb = $dpel_b['kkm_4'];
+		} elseif ($dsiswa['kelas'] == "V") {
+			$kkmb = $dpel_b['kkm_5'];
+		} elseif ($dsiswa['kelas'] == "VI") {
+			$kkmb = $dpel_b['kkm_6'];
 		} else {
-			$kkmb = $dpel_b['kkm_9'];
+			$kkmb = $dpel_b['kkm_5'];
 		}
 
 		$rentangb = (100 - $kkmb) / 3;
