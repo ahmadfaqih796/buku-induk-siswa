@@ -20,7 +20,7 @@ $da = $la->fetch_array(MYSQLI_ASSOC);
    <div class="card-body">
       <!-- <?= $_SESSION['i_abis'] ?> -->
 
-      <h4><small><a href="index.php?hal=edit_admin&edit=<?= $_SESSION['i_abis'] ?>" class="btn btn-primary"><i class="fa fa-edit"></i></a></small> Ubah Profil</h4>
+      <h4><small><a href="index.php?hal=edit_admin&profil=ok&edit=<?= $_SESSION['i_abis'] ?>" class="btn btn-primary"><i class="fa fa-edit"></i></a></small> Ubah Profil</h4>
       <div class="table-responsive">
          <table class="table table-striped table-hover ">
             <tr>

@@ -13,6 +13,8 @@ if (isset($_SESSION['u_abis'])) {
         $lwakel = mysqli_query($connect, "select * from tbwali_kelas where username = '$user'");
         $dwakel = $lwakel->fetch_array(MYSQLI_ASSOC);
     }
+    $query_user = mysqli_query($connect, 'select * from tbadmin WHERE id_admin = ' .  $id . ' ');
+    $user = $query_user->fetch_array(MYSQLI_ASSOC);
 } else {
     echo "<script>alert('Silahkan Login terlebih dahulu!')
 	document.location='login.php'</script>";
@@ -442,12 +444,12 @@ if ($bulan >= 7) {
                             <div class="dropdown">
                                 <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                     <i class="fa fa-user"></i>
-                                    <?= $nama; ?>
+                                    <?= $user["nama_lengkap"]; ?>
                                 </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="index.php?hal=profil_akun">
                                         <i class="fa fa-user"></i>
-                                        Profile Akun
+                                        Profil Akun
                                     </a>
                                     <a class="dropdown-item" href="logout.php" onclick="return confirm('Anda yakin ingin keluar?')">
                                         <i class="fa fa-sign-out"></i>
