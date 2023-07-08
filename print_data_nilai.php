@@ -7,8 +7,12 @@ $dsiswa = $lsiswa->fetch_array(MYSQLI_ASSOC);
 
 $ns = str_replace(" ", "_", $dsiswa['nm_lengk_siswa']);
 $nama_file = date("Y-m-d") . "_data_nilai_" . $ns;
-$tgl = $_POST['tgl'];
-$tgl = "Jakarta, 02 Juli 2023";
+
+if (isset($_POST['tgl'])) {
+	$tgl = $_POST['tgl'];
+} else {
+	$tgl = "Jakarta, 02 Juli 2023";
+}
 
 if (isset($_POST['semester'])) {
 	$sm = $_POST['semester'];
