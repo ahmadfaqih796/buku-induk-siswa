@@ -13,12 +13,10 @@ if ($cek > 0){
 	$_SESSION['u_abis'] = $user;
 	$_SESSION['p_abis'] = $pass;
 	$_SESSION['n_abis'] = $data['nama_lengkap'];
-	$_SESSION['i_abis'] = $data['user_id'];
+	$_SESSION['i_abis'] = $data['id_admin'];
 	$_SESSION['l_abis'] = $data['akses_level'];
 	header("location:index.php");
 } else {
 	echo "<script>alert('Username atau Password Salah!');
 	document.location='login.php'</script>";
 }
-
-?>
